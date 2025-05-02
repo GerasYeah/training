@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <h1 id="title">DOM</h1>
+    <h2 id="subtitle">Document Object Model</h2>
+    <p class="text p1">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing programming languages to manipulate the content, structure, and style of web pages.</p>
+    <p class="text p2">In the DOM, each element, attribute, and piece of text is represented as a node. The DOM provides a way to access and modify these nodes using JavaScript.</p>
+    <p class="text p3">For example, you can use the DOM to change the text of a heading, add new elements to a page, or respond to user events like clicks and key presses.</p>
+    <p class="text p4">Here are some common DOM manipulation methods:</p>
+    <ul class="list document">
+        <li><strong>Properties:</strong></li>
+        <ul>
+            <li><code>document</code>: Represents the entire HTML document.</li>
+            <li><code>document.body</code>, <code>document.head</code>, <code>document.title</code>: Represent the body, head, and title of the document, respectively.</li>
+            <li><code>document.URL</code>, <code>document.location</code>: Represent the URL of the document.</li>
+            <li><code>document.links</code>, <code>document.images</code>, <code>document.forms</code>, <code>document.scripts</code>: Return collections of links, images, forms, and scripts in the document.</li>
+            <li><code>document.cookie</code>: Refers to the cookies associated with the document.</li>
+        </ul>
+        <li><strong>Methods:</strong></li>
+        <ul>
+            <li><code>document.getElementById(id)</code>, <code>document.getElementsByClassName(className)</code>, <code>document.getElementsByTagName(tagName)</code>, <code>document.getElementsByName(name)</code>: Retrieve elements by ID, class name, tag name, or name attribute.</li>
+            <li><code>document.querySelector(selector)</code>, <code>document.querySelectorAll(selector)</code>: Retrieve elements using CSS selectors.</li>
+            <li><code>document.createElement(tagName)</code>, <code>document.createTextNode(text)</code>: Create new elements or text nodes.</li>
+            <li><code>document.appendChild(newElement)</code>, <code>document.removeChild(childElement)</code>, <code>document.replaceChild(newElement, oldElement)</code>: Manipulate child elements in the document.</li>
+            <li><code>document.write(content)</code>, <code>document.open()</code>, <code>document.close()</code>: Write or manage document content.</li>
+        </ul>
+    </ul>
+
+    <ul class="list element">
+        <li><strong>Element Properties and Methods:</strong></li>
+        <ul>
+            <li><code>element.id</code>: Represents the ID of the element.</li>
+            <li><code>element.setAttribute(name, value)</code>: Sets the value of an attribute on the element.</li>
+            <li><code>element.style.property = value</code>: Changes the CSS style of the element.</li>
+            <li><code>element.addEventListener(event, function)</code>: Attaches an event handler to the element.</li>
+            <li><code>element.innerHTML</code>, <code>element.textContent</code>: Set the HTML or text content of the element.</li>
+            <li><code>element.appendChild(newElement)</code>, <code>element.removeChild(childElement)</code>: Add or remove child elements.</li>
+        </ul>
+    </ul>
+
+    <ul class="list classList">
+        <li><strong>Class List Methods:</strong></li>
+        <ul>
+            <li><code>element.classList</code>: Returns the class list of the element.</li>
+            <li><code>element.classList.add(className)</code>, <code>element.classList.remove(className)</code>: Add or remove a class.</li>
+            <li><code>element.classList.toggle(className)</code>: Toggle a class on the element.</li>
+            <li><code>element.classList.contains(className)</code>: Check if the element has a specific class.</li>
+            <li><code>element.classList.replace(oldClass, newClass)</code>: Replace a class on the element.</li>
+            <li><code>element.classList.item(index)</code>: Get the class name at a specific index.</li>
+            <li><code>element.classList.length</code>: Get the number of classes on the element.</li>
+        </ul>
+    </ul>
+    <button id="changeTextButton">Change Text</button>
+    <p id="textToChange">This text will change when you click the button.</p>
+    <script src="script.js"></script>
+</html>
